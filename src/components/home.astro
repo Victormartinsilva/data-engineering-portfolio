@@ -2,28 +2,51 @@
 import LetterGlitch from "../React/LetterGlitch.tsx";
 import LogoWall from "../components/logoWall.astro";
 import SkillsList from "../React/SkillsList.tsx";
+const base = import.meta.env.BASE_URL;
 ---
 
 <section class="text-[var(--white)] mt-12 md:mt-0" id="inicio">
   <div class="max-w-5xl mx-auto space-y-8 md:py-36 pb-14">
-    <div class="text-left space-y-4">
-      <p class="text-md md:text-lg text-[var(--white-icon)] shiny-white">
-        Olá, eu sou Bruno Chiconato!
-      </p>
-      <div
-        class="flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-8 md:gap-4"
-      >
-        <h1
-          class="text-[var(--white)] text-5xl md:text-6xl font-medium text-pretty leading-none"
-        >
-          Engenheiro <br /> de Dados
-        </h1>
-        <p class="text-md md:text-2xl text-[var(--white-icon)]">
-          Projetando <span class="text-[var(--sec)] shiny-sec">soluções</span> que <span class="text-[var(--sec)] shiny-sec">funcionam</span> hoje,
-          <span class="text-[var(--sec)] shiny-sec">escalam</span> amanhã
-          e <span class="text-[var(--sec)] shiny-sec">não quebram</span> porque é sexta.
-        </p>
+    <div class="text-left">
+      <div class="flex flex-col lg:flex-row lg:items-start space-y-4 lg:space-y-0 lg:space-x-8 md:gap-4">
+        <div class="flex flex-col">
+          <p class="text-md md:text-lg text-[var(--white-icon)] shiny-white mb-1 md:mb-2">
+            Olá, eu sou Bruno Chiconato!
+          </p>
+          <h1 class="text-[var(--white)] text-5xl md:text-6xl font-medium text-pretty leading-none">
+            Engenheiro <br /> de Dados
+          </h1>
+        </div>
+        <div class="flex flex-col gap-8 md:gap-10">
+          <p class="text-md md:text-2xl text-[var(--white-icon)]">
+            Projetando <span class="text-[var(--sec)] shiny-sec">soluções</span> que
+            <span class="text-[var(--sec)] shiny-sec">funcionam</span> hoje,
+            <span class="text-[var(--sec)] shiny-sec">escalam</span> amanhã
+            e <span class="text-[var(--sec)] shiny-sec">não quebram</span> porque é sexta.
+          </p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 items-center">
+            <img
+              src={`${base}aws-cloud-quest.png`}
+              alt="AWS Cloud Quest — Cloud Practitioner"
+              class="w-full h-28 md:h-32 object-contain rounded-xl"
+              loading="lazy"
+            />
+            <img
+              src={`${base}databricks-fundamentals.png`}
+              alt="Databricks Fundamentals"
+              class="w-full h-28 md:h-32 object-contain rounded-xl transform scale-115 md:scale-125"
+              loading="lazy"
+            />
+            <img
+              src={`${base}astronomer-airflow-fundamentals.png`}
+              alt="Astronomer — Apache Airflow Fundamentals"
+              class="w-full h-28 md:h-32 object-contain rounded-xl"
+              loading="lazy"
+            />
+          </div>
+        </div>
       </div>
+
       <div class="flex justify-start gap-2 pt-3 md:pt-6">
         <a
           target="_blank"
