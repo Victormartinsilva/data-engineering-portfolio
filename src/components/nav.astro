@@ -7,7 +7,7 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   {
-    label: "Início",
+    label: "Inicio",
     href: "#inicio",
     icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M21 20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V9.48907C3 9.18048 3.14247 8.88917 3.38606 8.69972L11.3861 2.47749C11.7472 2.19663 12.2528 2.19663 12.6139 2.47749L20.6139 8.69972C20.8575 8.88917 21 9.18048 21 9.48907V20ZM19 19V9.97815L12 4.53371L5 9.97815V19H19Z"></path></svg>`,
   },
@@ -99,22 +99,17 @@ const navItems: NavItem[] = [
 <script>
   const nav = document.getElementById("main-nav");
   const maxScroll = 1000;
-  let rafId: number | null = null;
+  let rafId = null;
 
   function updateNav() {
     if (window.scrollY > 0) {
       nav?.classList.add("scrolling");
-
       const scrollProgress = Math.min(window.scrollY / maxScroll, 1);
       const easeProgress = 1 - Math.pow(1 - scrollProgress, 4);
-
       const minWidth = 528;
       const maxWidth = window.innerWidth * 0.8;
       const currentWidth = maxWidth - (maxWidth - minWidth) * easeProgress;
-
-      if (window.innerWidth >= 768) {
-        nav?.style.setProperty("width", `${currentWidth}px`);
-      }
+      if (window.innerWidth >= 768) nav?.style.setProperty("width", `${currentWidth}px`);
     } else {
       nav?.classList.remove("scrolling");
       nav?.style.setProperty("width", "80%");
@@ -122,54 +117,80 @@ const navItems: NavItem[] = [
     rafId = null;
   }
 
-  window.addEventListener(
-    "scroll",
-    () => {
-      if (!rafId) {
-        rafId = requestAnimationFrame(updateNav);
+  const sectionEls = Array.from(document.querySelectorAll("section[id]")) as HTMLElement[];
+  const navLinks = Array.from(document.querySelectorAll("nav a[href^='#']"));
+  const byHref = Object.fromEntries(navLinks.map(a => [a.getAttribute("href") || "", a]));
+
+  let suppressSpyUntil = 0;
+
+  function suppressSpy(ms = 900) { suppressSpyUntil = performance.now() + ms; }
+  function spyIsSuppressed() { return performance.now() < suppressSpyUntil; }
+
+  function setActiveById(id: string) {
+    const href = `#${id}`;
+    navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === href));
+  }
+
+  function updateActiveOnScroll() {
+    const anchorY = window.scrollY + window.innerHeight * 0.28 + (nav?.offsetHeight || 0);
+
+    let inside: string | null = null;
+    let nearest: { id: string; dist: number } | null = null;
+
+    for (const sec of sectionEls) {
+      const top = sec.offsetTop;
+      const bottom = top + sec.offsetHeight;
+
+      if (anchorY >= top && anchorY < bottom) {
+        inside = sec.id;
+        break;
       }
-    },
-    { passive: true }
-  );
+      const dist = Math.min(Math.abs(anchorY - top), Math.abs(anchorY - bottom));
+      if (!nearest || dist < nearest.dist) nearest = { id: sec.id, dist };
+    }
+
+    const id = inside ?? nearest?.id;
+    if (id) setActiveById(id);
+  }
 
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
+    anchor.addEventListener("click", (e) => {
       e.preventDefault();
-      const target = e.currentTarget as HTMLAnchorElement;
-      const targetId = target.getAttribute("href")?.substring(1) || "";
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: "smooth",
-        });
+      const target = e.currentTarget;
+      if (!(target instanceof HTMLAnchorElement)) return;
+
+      const targetId = (target.getAttribute("href") || "").slice(1);
+      const el = document.getElementById(targetId);
+      if (el) {
+        setActiveById(targetId);
+        suppressSpy(900);
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     });
   });
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("section[id]");
-    const navLinks = document.querySelectorAll("nav a[href^='#']");
-    const observerOptions = { threshold: 0.6 };
-
-    const observerCallback = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          navLinks.forEach((link) => link.classList.remove("active"));
-          const id = entry.target.getAttribute("id");
-          const activeLink = document.querySelector(`nav a[href="#${id}"]`);
-          if (activeLink) {
-            activeLink.classList.add("active");
-          }
-        }
+  function onScroll() {
+    if (!rafId) {
+      rafId = requestAnimationFrame(() => {
+        updateNav();
+        if (!spyIsSuppressed()) updateActiveOnScroll();
+        rafId = null;
       });
-    };
+    }
+  }
 
-    const observer = new IntersectionObserver(
-      observerCallback,
-      observerOptions
-    );
-    sections.forEach((section) => observer.observe(section));
-  });
+  function init() {
+    updateNav();
+    updateActiveOnScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
 </script>
 
 <style>
