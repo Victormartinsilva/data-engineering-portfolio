@@ -1,0 +1,43 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+<section id="jornada" class="scroll-mt-24 py-12 text-[var(--white)] border-t border-[#ffffff10]">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-lg text-[var(--sec)] mb-2 shiny-sec">Minha Jornada</h2>
+    <h3 class="text-4xl md:text-5xl font-medium mb-8">
+      Do Business Intelligence à Engenharia de Dados
+    </h3>
+    <div class="text-left space-y-6 text-[var(--white-icon)] text-base md:text-lg leading-relaxed">
+      <p>
+        Minha carreira começou onde os dados encontram o negócio: na linha de frente do Business Intelligence. Ali, aprendi que relatórios precisos são cruciais, mas insuficientes. A verdadeira necessidade era por uma fundação de dados robusta, escalável e confiável. Essa percepção foi o gatilho para a minha transição para a Engenharia de Dados.
+      </p>
+      <p>
+        Hoje, eu não construo apenas pipelines; eu crio as pontes entre a complexidade técnica e a clareza estratégica. Minha experiência em BI me permite projetar soluções com empatia pelo consumidor final dos dados, garantindo que cada tabela modelada e cada fluxo orquestrado não seja apenas funcional, mas fundamental para impulsionar a tomada de decisão.
+      </p>
+    </div>
+
+    <div class="mt-8">
+      <h3 class="text-lg text-[var(--sec)] mb-6 shiny-sec">Minhas Certificações</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 items-center max-w-2xl mx-auto">
+        <img
+          src=`${base}/aws-cloud-quest.png`
+          alt="AWS Cloud Quest — Cloud Practitioner"
+          class="w-full h-20 md:h-24 object-contain rounded-xl"
+          loading="lazy"
+        />
+        <img
+          src=`${base}/databricks-fundamentals.png`
+          alt="Databricks Fundamentals"
+          class="w-full h-24 md:h-28 object-contain rounded-xl transform sm:scale-115"
+          loading="lazy"
+        />
+        <img
+          src=`${base}/astronomer-airflow-fundamentals.png`
+          alt="Astronomer — Apache Airflow Fundamentals"
+          class="w-full h-20 md:h-24 object-contain rounded-xl"
+          loading="lazy"
+        />
+      </div>
+    </div>
+    </div>
+</section>
