@@ -43,23 +43,23 @@ const SkillsList = () => {
   const [openItem, setOpenItem] = useState<string | null>(null);
 
   const skills = {
-    "Análise e Visualização de Dados": [
-      "Desenvolvo dashboards interativos com Power BI para visualização de dados e KPIs.",
-      "Crio análises estatísticas com Python (pandas, numpy, matplotlib) para insights de negócio.",
-      "Utilizo Tableau para criação de relatórios avançados e storytelling com dados.",
-      "Aplico técnicas de ETL e tratamento de dados no Power Query para limpeza e transformação."
+    "Análise de Dados e BI": [
+      "Desenvolvo dashboards e relatórios com Power BI para análise de KPIs e tomada de decisão estratégica.",
+      "Realizo análises geoestatísticas com R, MySQL e QGIS para mapeamento e visualização espacial.",
+      "Crio visualizações interativas com Python (matplotlib, seaborn) e Tableau para storytelling com dados.",
+      "Aplico técnicas de ETL e automação de processos para otimização de workflows analíticos."
     ],
-    "Banco de Dados e SQL": [
-      "Desenvolvo consultas complexas em SQL Server e MySQL para extração e análise de dados.",
-      "Otimizo consultas SQL para melhor performance e eficiência no processamento.",
-      "Projeto e implemento estruturas de banco de dados relacionais.",
-      "Integro diferentes fontes de dados para criação de data marts e data warehouses."
-    ],
-    "Programação e Automação": [
-      "Programo em Python para análise de dados, automação de processos e machine learning.",
-      "Utilizo R para análises estatísticas avançadas e modelagem preditiva.",
+    "Desenvolvimento e Programação": [
+      "Programo em Python para análise de dados, desenvolvimento web com Flask e automação.",
+      "Utilizo R para análises estatísticas avançadas e modelagem de dados georreferenciados.",
       "Desenvolvo soluções em C para otimização de performance em cálculos complexos.",
-      "Aplico metodologias ágeis (SCRUM) e mapeamento de processos (BPMN) para otimização."
+      "Trabalho com MySQL para gerenciamento de bases de dados e consultas otimizadas."
+    ],
+    "Ferramentas Técnicas e Metodologias": [
+      "Utilizo QGIS para análise espacial, criação de mapas temáticos e geoprocessamento.",
+      "Desenvolvo projetos em SolidWorks e AutoCAD para modelagem 3D e detalhamento técnico.",
+      "Aplico metodologias ágeis (SCRUM) e mapeamento de processos (BPMN) para otimização.",
+      "Implemento metodologias de melhoria contínua (5S, PDCA, 5W2H) em projetos industriais."
     ],
   };
 
@@ -70,7 +70,7 @@ const SkillsList = () => {
   return (
     <div className="text-left pt-3 md:pt-9">
         <h3 className="text-[var(--white)] text-3xl md:text-4xl font-semibold md:mb-6">
-        Minhas Especialidades Técnicas
+        Especialidades com 7+ Anos de Experiência
       </h3>
       <ul className="space-y-4 mt-4 text-lg">
         {Object.entries(skills).map(([category, items]) => (
