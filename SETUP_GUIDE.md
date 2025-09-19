@@ -1,4 +1,4 @@
-# 🚀 Guia Completo de Setup - Victor Silva Portfolio
+# 🚀 Guia Completo de Setup - Victor Martins da Silva Portfolio
 
 ## 📋 Pré-requisitos
 
@@ -29,22 +29,22 @@ npm run build
 
 ### 1. Configurar Git (primeira vez)
 ```bash
-git config --global user.name "Victor Silva"
-git config --global user.email "victor.silva@email.com"
+git config --global user.name "Victor Martins da Silva"
+git config --global user.email "victoreagri@gmail.com"
 ```
 
 ### 2. Inicializar Repositório Git
 ```bash
 git init
 git add .
-git commit -m "Initial commit: Victor Silva portfolio"
+git commit -m "Initial commit: Victor Martins da Silva portfolio"
 ```
 
 ### 3. Conectar ao GitHub
-1. Crie um repositório no GitHub chamado `victor-silva-portfolio`
+1. Crie um repositório no GitHub chamado `victor-martins-portfolio`
 2. Conecte o repositório local:
 ```bash
-git remote add origin https://github.com/victor-silva/victor-silva-portfolio.git
+git remote add origin https://github.com/Victormartinsilva/victor-martins-portfolio.git
 git branch -M main
 git push -u origin main
 ```
@@ -80,6 +80,7 @@ fix: corrige bug
 docs: atualiza documentação
 style: mudanças de estilo/formatação
 refactor: refatoração de código
+update: atualiza informações do perfil
 ```
 
 ## ☁️ Deploy no Vercel
@@ -88,7 +89,7 @@ refactor: refatoração de código
 1. Acesse [vercel.com](https://vercel.com)
 2. Faça login com sua conta GitHub
 3. Clique em "New Project"
-4. Selecione o repositório `victor-silva-portfolio`
+4. Selecione o repositório `victor-martins-portfolio`
 
 ### 2. Configurações do Deploy
 - **Framework Preset**: Astro
@@ -99,17 +100,23 @@ refactor: refatoração de código
 ### 3. Deploy Automático
 - Qualquer push para `main` fará deploy automático
 - Preview deployments para outras branches
-- URL personalizada disponível
+- URL: **https://victor-martins-portfolio.vercel.app**
 
 ## 📁 Estrutura de Arquivos Importantes
 
 ```
-victor-silva-portfolio/
+victor-martins-portfolio/
 ├── src/
 │   ├── components/          # Componentes Astro
+│   │   ├── home.astro      # Seção principal
+│   │   ├── journey.astro   # Jornada profissional
+│   │   ├── projects.astro  # Projetos
+│   │   └── skills.astro    # Habilidades
 │   ├── pages/              # Páginas do site
 │   ├── layouts/            # Layouts base
 │   └── React/              # Componentes React
+│       ├── SkillsList.tsx  # Lista de habilidades
+│       └── LetterGlitch.tsx # Efeito visual
 ├── public/                 # Arquivos estáticos
 ├── astro.config.mjs       # Configuração Astro
 ├── vercel.json            # Configuração Vercel
@@ -119,20 +126,26 @@ victor-silva-portfolio/
 
 ## 🎨 Personalização
 
-### Cores e Tema
-- Edite as variáveis CSS em `src/layouts/Layout.astro`
-- Cores principais: `--background`, `--sec`, `--white`
+### Informações Pessoais
+- **Contato**: `src/components/home.astro` (email, WhatsApp, LinkedIn)
+- **Sobre**: `src/components/journey.astro` (história profissional)
+- **Footer**: `src/components/footer.astro` (links e copyright)
 
-### Conteúdo
-- **Informações pessoais**: `src/components/home.astro`
-- **Projetos**: `src/components/projects.astro`
-- **Jornada profissional**: `src/components/journey.astro`
+### Projetos
+- **Lista de projetos**: `src/components/projects.astro`
+- **Adicionar novo projeto**: Inclua na array `projects` com:
+  - Título, imagem, link do GitHub
+  - Seções: Desafio, Solução, Impacto, Stack
+
+### Habilidades Técnicas
 - **Skills**: `src/React/SkillsList.tsx`
+- **Categorias**: Análise de Dados, SQL, Programação
+- **Tecnologias**: `src/components/logoWall.astro`
 
-### Imagens e Assets
-- Adicione imagens em `public/`
-- Atualize referências nos componentes
-- Substitua `favicon.png` por sua própria favicon
+### Cores e Tema
+- **Variáveis CSS**: `src/layouts/Layout.astro`
+- **Cor principal**: `--sec: #F28705` (laranja)
+- **Background**: `--background: #101010` (escuro)
 
 ## 🔄 Workflow de Desenvolvimento
 
@@ -155,6 +168,15 @@ victor-silva-portfolio/
    ```
 
 4. **Deploy automático** no Vercel após push
+
+## 📊 Informações do Perfil Atual
+
+- **Nome**: Victor Martins da Silva
+- **Formação**: Engenheiro Agrícola (UNIOESTE, 2017-2023)
+- **Foco**: Transição para Engenharia de Dados
+- **Especialidades**: Power BI, Python, SQL, R, Excel
+- **Contato**: victoreagri@gmail.com
+- **WhatsApp**: (45) 99922-5862
 
 ## 🆘 Troubleshooting
 
@@ -186,4 +208,4 @@ npm cache clean --force
 
 ---
 
-🎉 **Parabéns!** Seu portfólio está pronto para impressionar recrutadores!
+🎉 **Parabéns!** Seu portfólio está personalizado e pronto para impressionar recrutadores na área de dados!

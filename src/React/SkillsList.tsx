@@ -43,23 +43,23 @@ const SkillsList = () => {
   const [openItem, setOpenItem] = useState<string | null>(null);
 
   const skills = {
-    "Pipelines de Dados Confiáveis": [
-      "Desenvolvo pipelines ETL/ELT (Python, Spark) que reduzem o tempo de processamento em até 96%.",
-      "Orquestro fluxos de dados batch e near real-time com Airflow, garantindo execução confiável.",
-      "Implemento CI/CD (DataOps) para automatizar testes e garantir a entrega de dados de qualidade.",
-      "Otimizo queries SQL legadas, diminuindo o tempo de execução e os custos em até 90%."
+    "Análise e Visualização de Dados": [
+      "Desenvolvo dashboards interativos com Power BI para visualização de dados e KPIs.",
+      "Crio análises estatísticas com Python (pandas, numpy, matplotlib) para insights de negócio.",
+      "Utilizo Tableau para criação de relatórios avançados e storytelling com dados.",
+      "Aplico técnicas de ETL e tratamento de dados no Power Query para limpeza e transformação."
     ],
-    "Arquiteturas de Dados Escaláveis": [
-      "Construo infraestruturas de dados na AWS com Terraform (IaC) para alta escalabilidade.",
-      "Projeto arquiteturas Lakehouse em Databricks (Delta Lake, Unity Catalog) para dados governados.",
-      "Estruturo soluções serverless na AWS (Lambda, ECS) com foco em otimização de custo e performance.",
-      "Containerizo aplicações Spark com Docker para simplificar o deploy e a escalabilidade dos jobs."
+    "Banco de Dados e SQL": [
+      "Desenvolvo consultas complexas em SQL Server e MySQL para extração e análise de dados.",
+      "Otimizo consultas SQL para melhor performance e eficiência no processamento.",
+      "Projeto e implemento estruturas de banco de dados relacionais.",
+      "Integro diferentes fontes de dados para criação de data marts e data warehouses."
     ],
-    "Dados Prontos para o Negócio": [
-      "Utilizo dbt para modelar, testar e documentar dados, acelerando a geração de insights.",
-      "Crio datasets confiáveis que servem como 'fonte da verdade' para BI, Analytics e Data Science.",
-      "Garanto a governança e a qualidade dos dados com catálogos (Unity Catalog) e testes de ponta a ponta.",
-      "Traduzo requisitos de negócio em soluções de dados que impulsionam a tomada de decisão."
+    "Programação e Automação": [
+      "Programo em Python para análise de dados, automação de processos e machine learning.",
+      "Utilizo R para análises estatísticas avançadas e modelagem preditiva.",
+      "Desenvolvo soluções em C para otimização de performance em cálculos complexos.",
+      "Aplico metodologias ágeis (SCRUM) e mapeamento de processos (BPMN) para otimização."
     ],
   };
 
@@ -69,8 +69,8 @@ const SkillsList = () => {
 
   return (
     <div className="text-left pt-3 md:pt-9">
-      <h3 className="text-[var(--white)] text-3xl md:text-4xl font-semibold md:mb-6">
-        O que eu entrego com dados?
+        <h3 className="text-[var(--white)] text-3xl md:text-4xl font-semibold md:mb-6">
+        Minhas Especialidades Técnicas
       </h3>
       <ul className="space-y-4 mt-4 text-lg">
         {Object.entries(skills).map(([category, items]) => (

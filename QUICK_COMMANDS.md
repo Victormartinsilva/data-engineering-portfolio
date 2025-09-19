@@ -1,4 +1,4 @@
-# ⚡ Comandos Rápidos - Victor Silva Portfolio
+# ⚡ Comandos Rápidos - Victor Martins da Silva Portfolio
 
 ## 🚀 Desenvolvimento
 
@@ -33,16 +33,16 @@ git log --oneline
 
 ```bash
 # Configurar usuário (apenas primeira vez)
-git config --global user.name "Victor Silva"
-git config --global user.email "victor.silva@email.com"
+git config --global user.name "Victor Martins da Silva"
+git config --global user.email "victoreagri@gmail.com"
 
 # Inicializar repositório
 git init
 git add .
-git commit -m "Initial commit: Victor Silva portfolio"
+git commit -m "Initial commit: Victor Martins da Silva portfolio"
 
-# Conectar ao GitHub (substitua pela sua URL)
-git remote add origin https://github.com/victor-silva/victor-silva-portfolio.git
+# Conectar ao GitHub
+git remote add origin https://github.com/Victormartinsilva/victor-martins-portfolio.git
 git branch -M main
 git push -u origin main
 ```
@@ -51,8 +51,9 @@ git push -u origin main
 
 1. Acesse [vercel.com](https://vercel.com)
 2. Login com GitHub
-3. Import `victor-silva-portfolio`
+3. Import `victor-martins-portfolio`
 4. Deploy automático configurado! 🎉
+5. URL: **https://victor-martins-portfolio.vercel.app**
 
 ## 📝 Atalhos do Cursor
 
@@ -61,6 +62,13 @@ git push -u origin main
 - **Ctrl+Shift+P** - Command palette
 - **Ctrl+S** - Salvar
 - **Ctrl+Z** - Desfazer
+
+## 🎯 Informações Importantes
+
+- **GitHub**: [@Victormartinsilva](https://github.com/Victormartinsilva)
+- **LinkedIn**: [Victor Martins da Silva](https://www.linkedin.com/in/victor-martins-da-silva-a111ba190/)
+- **Email**: victoreagri@gmail.com
+- **WhatsApp**: (45) 99922-5862
 
 ---
 ✨ **Dica**: Use o painel Git do Cursor (Ctrl+Shift+G) para commits visuais!

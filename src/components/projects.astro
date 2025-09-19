@@ -21,9 +21,9 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Data Lake Architecture: Plataforma de Dados Moderna na AWS",
+    title: "Dashboard Analítico de Produção Agrícola com Power BI",
     image: lakehouse as ImageMetadata,
-    link: "https://github.com/victor-silva/data-lake-aws",
+    link: "https://github.com/Victormartinsilva/dashboard-producao-agricola",
     descriptionRich: {
       sections: [
         {
@@ -31,16 +31,17 @@ const projects: Project[] = [
           title: "Desafio",
           type: "paragraph",
           content:
-            "Construir uma arquitetura de dados moderna e escalável para processar grandes volumes de dados estruturados e não estruturados, garantindo alta disponibilidade e performance para análises em tempo real."
+            "Desenvolver um sistema de monitoramento e análise de dados de produção agrícola, integrando múltiplas fontes de dados para otimização de processos e tomada de decisão estratégica."
         },
         {
           icon: "",
           title: "Solução",
           type: "list",
           items: [
-            "Desenvolvi uma arquitetura Data Lake na AWS utilizando S3, Glue e Athena, implementando camadas Bronze, Silver e Gold para processamento incremental de dados.",
-            "Criei pipelines ETL automatizados com Apache Airflow e Spark, processando mais de 10TB de dados diários com alta confiabilidade e monitoramento.",
-            "Implementei governança de dados com AWS Lake Formation, garantindo segurança, controle de acesso granular e audit trail completo."
+            "Criei dashboards interativos no Power BI integrando dados de produtividade, clima e custos operacionais.",
+            "Implementei ETL automatizado no Power Query para tratamento e limpeza de dados de diferentes fontes.",
+            "Desenvolvi KPIs específicos para monitoramento de eficiência produtiva e análise de tendências sazonais.",
+            "Utilizei DAX para cálculos avançados de produtividade por hectare e análise comparativa temporal."
           ]
         },
         {
@@ -48,8 +49,9 @@ const projects: Project[] = [
           title: "Impacto",
           type: "list",
           items: [
-            "Reduzi o tempo de processamento de dados de horas para minutos, permitindo análises em tempo quase real para tomada de decisão estratégica.",
-            "Implementei uma arquitetura serverless que reduziu custos operacionais em 40% enquanto aumentou a escalabilidade e confiabilidade do sistema."
+            "Reduzi o tempo de geração de relatórios de produção de dias para minutos através da automação.",
+            "Identifiquei oportunidades de otimização que resultaram em 15% de melhoria na eficiência produtiva.",
+            "Criei visualizações que facilitaram a identificação de padrões sazonais e tendências de mercado."
           ]
         },
         {
@@ -57,16 +59,16 @@ const projects: Project[] = [
           title: "Stack",
           type: "paragraph",
           content:
-            "Python, PySpark, AWS (S3, Glue, Athena, Lambda), Apache Airflow, Terraform, Docker, CI/CD (GitHub Actions).",
+            "Power BI, Power Query, DAX, Excel, SQL Server, Python (pandas).",
           size: "base"
         }
       ]
     }
   },
   {
-    title: "Real-Time Analytics: Pipeline de Streaming com Kafka e Spark",
+    title: "Sistema de Análise Estatística com Python e R",
     image: stockmarket as ImageMetadata,
-    link: "https://github.com/victor-silva/streaming-analytics-pipeline",
+    link: "https://github.com/Victormartinsilva/analise-estatistica-python",
     descriptionRich: {
       sections: [
         {
@@ -74,17 +76,17 @@ const projects: Project[] = [
           title: "Desafio",
           type: "paragraph",
           content:
-            "Desenvolver uma solução de analytics em tempo real para processar milhões de eventos por segundo, garantindo baixa latência e alta throughput para dashboards executivos."
+            "Desenvolver análises estatísticas robustas para suporte à pesquisa acadêmica e tomada de decisão, utilizando métodos estatísticos avançados e visualização de dados."
         },
         {
           icon: "",
           title: "Solução",
           type: "list",
           items: [
-            "Implementei uma arquitetura de streaming usando Apache Kafka como message broker e Apache Spark Streaming para processamento em tempo real.",
-            "Desenvolvi microserviços containerizados com Docker e Kubernetes para ingestão de dados de múltiplas fontes (APIs, databases, IoT).",
-            "Criei dashboards interativos com Apache Superset e Grafana para visualização de métricas em tempo real.",
-            "Implementei alertas inteligentes com Apache Flink para detecção de anomalias e notificações automáticas."
+            "Implementei análises descritivas e inferenciais usando Python (pandas, numpy, scipy, matplotlib).",
+            "Desenvolvi modelos estatísticos em R para análise de variância e regressão múltipla.",
+            "Criei visualizações interativas com Plotly e Seaborn para comunicação efetiva dos resultados.",
+            "Automatizei relatórios estatísticos com geração automática de gráficos e tabelas."
           ]
         },
         {
@@ -92,9 +94,9 @@ const projects: Project[] = [
           title: "Impacto",
           type: "list",
           items: [
-            "Reduzi a latência de processamento de dados de 15 minutos para menos de 5 segundos, habilitando tomada de decisão em tempo real.",
-            "Aumentei a disponibilidade do sistema para 99.9% através de arquitetura distribuída e estratégias de failover automático.",
-            "Implementei monitoramento proativo que reduziu o tempo médio de detecção de problemas (MTTD) em 80%."
+            "Automatizei análises estatísticas que antes demandavam semanas para serem concluídas.",
+            "Aumentei a precisão das análises através de métodos estatísticos rigorosos e validação cruzada.",
+            "Criei templates reutilizáveis que padronizaram o processo de análise de dados na organização."
           ]
         },
         {
@@ -102,16 +104,16 @@ const projects: Project[] = [
           title: "Stack",
           type: "paragraph",
           content:
-            "Apache Kafka, Apache Spark, Apache Flink, Docker, Kubernetes, Apache Superset, Grafana, Python, Scala.",
+            "Python, R, pandas, numpy, scipy, matplotlib, seaborn, plotly, Jupyter Notebook.",
           size: "base"
         }
       ]
     }
   },
   {
-    title: "Cloud Data Warehouse: Solução Analytics com Snowflake e dbt",
+    title: "Otimização de Processos com Mapeamento BPMN e Análise de Dados",
     image: northwind as ImageMetadata,
-    link: "https://github.com/victor-silva/cloud-data-warehouse",
+    link: "https://github.com/Victormartinsilva/otimizacao-processos-bpmn",
     descriptionRich: {
       sections: [
         {
@@ -119,17 +121,17 @@ const projects: Project[] = [
           title: "Desafio",
           type: "paragraph",
           content:
-            "Migrar um data warehouse on-premises legado para a nuvem, modernizando a stack de analytics e implementando práticas de DataOps para acelerar o desenvolvimento de modelos de dados."
+            "Mapear, analisar e otimizar processos organizacionais utilizando metodologias ágeis e ferramentas de análise de dados para identificar gargalos e oportunidades de melhoria."
         },
         {
           icon: "",
           title: "Solução",
           type: "list",
           items: [
-            "Migrei a infraestrutura para Snowflake, implementando arquitetura multi-cluster para otimização de custos e performance.",
-            "Desenvolvi modelos de dados dimensionais com dbt, implementando testes automatizados e documentação viva.",
-            "Criei pipelines CI/CD com GitHub Actions para deploy automatizado de modelos e validação de qualidade de dados.",
-            "Implementei estratégias de particionamento e clustering para otimizar consultas complexas e reduzir custos de compute."
+            "Mapeei processos organizacionais utilizando BPMN no Bizagi para identificação de gargalos.",
+            "Implementei metodologia SCRUM para gestão ágil de projetos de melhoria contínua.",
+            "Desenvolvi análises de tempo e movimento com Excel avançado e Power BI.",
+            "Criei indicadores de performance (KPIs) para monitoramento contínuo da eficiência dos processos."
           ]
         },
         {
@@ -137,9 +139,9 @@ const projects: Project[] = [
           title: "Impacto",
           type: "list",
           items: [
-            "Reduzi custos de infraestrutura em 60% através da migração para arquitetura cloud-native e otimizações de performance.",
-            "Acelerei o desenvolvimento de novos modelos de dados em 70% através da implementação de práticas de DataOps.",
-            "Aumentei a confiabilidade dos dados com cobertura de testes automatizados de 95% e monitoramento contínuo de qualidade."
+            "Reduzi o tempo de execução de processos críticos em até 30% através da identificação e eliminação de gargalos.",
+            "Implementei melhorias que resultaram em economia de custos operacionais significativa.",
+            "Padronizei processos organizacionais aumentando a qualidade e consistência das operações."
           ]
         },
         {
@@ -147,16 +149,16 @@ const projects: Project[] = [
           title: "Stack",
           type: "paragraph",
           content:
-            "Snowflake, dbt, GitHub Actions, Python, SQL, Terraform, Docker, Apache Airflow.",
+            "Bizagi (BPMN), Excel, Power BI, SCRUM, Ferramentas de Análise de Processos.",
           size: "base"
         }
       ]
     }
   },
   {
-    title: "MLOps Platform: Pipeline de Machine Learning em Produção",
+    title: "Portfólio Profissional com Analytics e Tecnologias Web",
     image: scholarstream as ImageMetadata,
-    link: "https://github.com/victor-silva/mlops-platform",
+    link: "https://github.com/Victormartinsilva/victor-portfolio",
     descriptionRich: {
       sections: [
         {
@@ -164,17 +166,17 @@ const projects: Project[] = [
           title: "Desafio",
           type: "paragraph",
           content:
-            "Construir uma plataforma MLOps completa para automatizar o ciclo de vida de modelos de machine learning, desde o desenvolvimento até o deployment em produção, garantindo monitoramento e versionamento."
+            "Desenvolver um portfólio profissional moderno e responsivo que demonstre habilidades técnicas em desenvolvimento web e análise de dados, com foco na experiência do usuário."
         },
         {
           icon: "",
           title: "Solução",
           type: "list",
           items: [
-            "Desenvolvi uma plataforma MLOps usando MLflow para tracking de experimentos e versionamento de modelos.",
-            "Implementei pipelines automatizados com Apache Airflow para retreinamento de modelos baseado em drift de dados.",
-            "Criei APIs de serving de modelos com FastAPI e Docker, deployadas em Kubernetes para alta escalabilidade.",
-            "Implementei monitoramento de modelos em produção com Prometheus e Grafana para detecção de degradação de performance."
+            "Desenvolvi portfólio responsivo utilizando HTML5, CSS3 e JavaScript moderno.",
+            "Implementei design gamificado e PWA (Progressive Web App) para melhor experiência do usuário.",
+            "Integrei Google Analytics para monitoramento de performance e comportamento dos usuários.",
+            "Criei seções interativas para apresentação de projetos e habilidades técnicas."
           ]
         },
         {
@@ -182,9 +184,9 @@ const projects: Project[] = [
           title: "Impacto",
           type: "list",
           items: [
-            "Reduzi o tempo de deployment de modelos de semanas para horas através da automação completa do pipeline MLOps.",
-            "Aumentei a precisão dos modelos em produção em 15% através de retreinamento automático baseado em métricas de performance.",
-            "Implementei governança de modelos que garante auditabilidade e compliance em ambientes regulamentados."
+            "Criei uma presença digital profissional que destaca competências técnicas e projetos realizados.",
+            "Implementei métricas de acompanhamento que permitem análise contínua do engajamento.",
+            "Desenvolvi um template reutilizável que pode ser adaptado para outros profissionais da área."
           ]
         },
         {
@@ -192,7 +194,7 @@ const projects: Project[] = [
           title: "Stack",
           type: "paragraph",
           content:
-            "MLflow, Apache Airflow, FastAPI, Docker, Kubernetes, Prometheus, Grafana, Python, scikit-learn, TensorFlow.",
+            "HTML5, CSS3, JavaScript, PWA, Google Analytics, Design Responsivo.",
           size: "base"
         }
       ]
@@ -204,7 +206,7 @@ const projects: Project[] = [
 <section id="projetos" class="scroll-mt-24 py-12 border-t border-[#ffffff10] text-[var(--white)]">
   <div class="max-w-5xl mx-auto">
     <h2 class="text-lg text-[var(--sec)] mb-2 shiny-sec">Meus projetos</h2>
-    <h3 class="text-4xl md:text-5xl font-medium mb-8">Projetos</h3>
+    <h3 class="text-4xl md:text-5xl font-medium mb-8">Projetos em Desenvolvimento</h3>
     <div class="grid grid-cols-1 gap-0">
       {
         projects.map((project) => (
@@ -272,7 +274,7 @@ const projects: Project[] = [
     </div>
     <a
       target="_blank"
-      href="https://github.com/victor-silva?tab=repositories"
+      href="https://github.com/Victormartinsilva?tab=repositories"
       aria-label="GitHub"
       class="w-full flex items-center justify-center gap-2 mt-9 text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-[var(--white-icon-tr)] p-3 rounded-full bg-[#1414149c] hover:bg-[var(--white-icon-tr)] hover:scale-105"
     >
