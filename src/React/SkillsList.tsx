@@ -2,7 +2,7 @@ import { useState } from "react";
 
 // --- ÍCONES FINAIS ESCOLHIDOS POR VOCÊ ---
 const CategoryIcons = {
-  "Pipelines de Dados Confiáveis": (
+    "Dashboards que Geram Decisões": (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 16 16" // viewBox ajustado para 16x16
@@ -12,7 +12,7 @@ const CategoryIcons = {
       <path fillRule="evenodd" d="M0 1.75A.75.75 0 0 1 .75 1h6a.75.75 0 0 1 0 1.5H6.5v2.25a.5.5 0 0 0 .5.5h2.25A5.75 5.75 0 0 1 15 11v2.5h.25a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1 0-1.5h.25v-2.25a.5.5 0 0 0-.5-.5H6.75A5.75 5.75 0 0 1 1 5V2.5H.75A.75.75 0 0 1 0 1.75M11 13.5h2.5V11a4.25 4.25 0 0 0-4.25-4.25h-.5v2.5H9a2 2 0 0 1 2 2zm-8.5-11H5v2.25a2 2 0 0 0 2 2h.25v2.5h-.5A4.25 4.25 0 0 1 2.5 5z" clipRule="evenodd"></path>
     </svg>
   ),
-  "Arquiteturas de Dados Escaláveis": (
+    "Automação que Economiza Tempo": (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24" // viewBox mantido em 24x24
@@ -22,7 +22,7 @@ const CategoryIcons = {
       <path d="M0 3.5A2.5 2.5 0 0 0 2.5 6h17A2.5 2.5 0 0 0 22 3.5v-1A2.5 2.5 0 0 0 19.5 0h-17A2.5 2.5 0 0 0 0 2.5ZM3.64 3a1.11 1.11 0 1 1 1.11 1.11A1.1 1.1 0 0 1 3.64 3M7.5 3a1.12 1.12 0 1 1 1.11 1.11A1.11 1.11 0 0 1 7.5 3m10 6.5a7.9 7.9 0 0 1 3.78.95A.49.49 0 0 0 22 10v-.5A2.5 2.5 0 0 0 19.5 7h-17A2.5 2.5 0 0 0 0 9.5v1A2.5 2.5 0 0 0 2.5 13h8.14a.5.5 0 0 0 .4-.21A8 8 0 0 1 17.5 9.5m-7.77.5a1.12 1.12 0 1 1-1.12-1.11A1.11 1.11 0 0 1 9.73 10m-3.87 0a1.11 1.11 0 1 1-1.11-1.11A1.1 1.1 0 0 1 5.86 10m3.7 4H2.5A2.5 2.5 0 0 0 0 16.5v1A2.5 2.5 0 0 0 2.5 20h6.74a.51.51 0 0 0 .48-.64a8 8 0 0 1 .3-4.69a.49.49 0 0 0-.46-.67m-5.92 3a1.11 1.11 0 1 1 1.11 1.11A1.1 1.1 0 0 1 3.64 17"></path><path d="M11 17.5a6.5 6.5 0 1 0 6.5-6.5a6.51 6.51 0 0 0-6.5 6.5m5.75 1a.25.25 0 0 0-.25-.25H15a.75.75 0 0 1 0-1.5h1.5a.25.25 0 0 0 .25-.25V15a.75.75 0 0 1 1.5 0v1.5a.25.25 0 0 0 .25.25H20a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25V20a.75.75 0 0 1-1.5 0Z"></path>
     </svg>
   ),
-  "Dados Prontos para o Negócio": (
+    "Soluções que Reduzem Custos": (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 48 48" // viewBox ajustado para 48x48
@@ -43,23 +43,23 @@ const SkillsList = () => {
   const [openItem, setOpenItem] = useState<string | null>(null);
 
   const skills = {
-    "Análise de Dados e BI": [
-      "Desenvolvo dashboards e relatórios com Power BI para análise de KPIs e tomada de decisão estratégica.",
-      "Realizo análises geoestatísticas com R, MySQL e QGIS para mapeamento e visualização espacial.",
-      "Crio visualizações interativas com Python (matplotlib, seaborn) e Tableau para storytelling com dados.",
-      "Aplico técnicas de ETL e automação de processos para otimização de workflows analíticos."
+    "Dashboards que Geram Decisões": [
+      "Na FK Steel: Criei dashboards que reduziram relatórios de 4h para 15min, aumentando produtividade em 20%.",
+      "Na EICON: Desenvolvi análises de mercado que identificaram oportunidades de 18% de crescimento.",
+      "Power BI e Python são meus aliados para transformar dados complexos em insights acionáveis.",
+      "Cada dashboard conta uma história que leva à ação, não apenas informação."
     ],
-    "Desenvolvimento e Programação": [
-      "Programo em Python para análise de dados, desenvolvimento web com Flask e automação.",
-      "Utilizo R para análises estatísticas avançadas e modelagem de dados georreferenciados.",
-      "Desenvolvo soluções em C para otimização de performance em cálculos complexos.",
-      "Trabalho com MySQL para gerenciamento de bases de dados e consultas otimizadas."
+    "Automação que Economiza Tempo": [
+      "No CNPq: Automatizei análises geoestatísticas que aceleraram pesquisas de semanas para dias.",
+      "Na Unimaq: Otimizei processos agrícolas que reduziram tempo de operações em 25%.",
+      "Python e R são minhas ferramentas para eliminar tarefas repetitivas e focar no que importa.",
+      "Cada script que escrevo é pensado para escalar e gerar impacto duradouro."
     ],
-    "Ferramentas Técnicas e Metodologias": [
-      "Utilizo QGIS para análise espacial, criação de mapas temáticos e geoprocessamento.",
-      "Desenvolvo projetos em SolidWorks e AutoCAD para modelagem 3D e detalhamento técnico.",
-      "Aplico metodologias ágeis (SCRUM) e mapeamento de processos (BPMN) para otimização.",
-      "Implemento metodologias de melhoria contínua (5S, PDCA, 5W2H) em projetos industriais."
+    "Soluções que Reduzem Custos": [
+      "Na agricultura: Implementei manejo de precisão que reduziu custos de insumos em 12%.",
+      "Na indústria: Identifiquei gargalos que resultaram em economia significativa de recursos.",
+      "QGIS e análise espacial revelam padrões ocultos que geram economia real.",
+      "Metodologias ágeis (SCRUM, BPMN) garantem que as soluções sejam entregues no prazo e orçamento."
     ],
   };
 
@@ -70,7 +70,7 @@ const SkillsList = () => {
   return (
     <div className="text-left pt-3 md:pt-9">
         <h3 className="text-[var(--white)] text-3xl md:text-4xl font-semibold md:mb-6">
-        Especialidades com 7+ Anos de Experiência
+        Como Eu Gero Valor com Dados
       </h3>
       <ul className="space-y-4 mt-4 text-lg">
         {Object.entries(skills).map(([category, items]) => (

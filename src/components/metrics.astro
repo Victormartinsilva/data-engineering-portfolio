@@ -1,0 +1,85 @@
+---
+// Componente de métricas com dados dos resultados
+---
+
+<section class="py-12 text-[var(--white)]">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-lg text-[var(--sec)] mb-2 shiny-sec text-center">Resultados comprovados</h2>
+    <h3 class="text-3xl md:text-4xl font-medium mb-12 text-center">Impacto Mensurável</h3>
+    
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <!-- Métrica 1 -->
+      <div class="bg-[#1414149c] rounded-2xl p-6 border border-[var(--white-icon-tr)] text-center hover:bg-[#1a1a1a9c] transition-all duration-300">
+        <div class="text-3xl md:text-4xl font-bold text-[var(--sec)] mb-2">+20%</div>
+        <div class="text-sm md:text-base text-[var(--white-icon)]">Eficiência<br />Industrial</div>
+        <div class="text-xs text-[var(--white-icon)] mt-2 opacity-70">FK Steel</div>
+      </div>
+
+      <!-- Métrica 2 -->
+      <div class="bg-[#1414149c] rounded-2xl p-6 border border-[var(--white-icon-tr)] text-center hover:bg-[#1a1a1a9c] transition-all duration-300">
+        <div class="text-3xl md:text-4xl font-bold text-[var(--sec)] mb-2">+15%</div>
+        <div class="text-sm md:text-base text-[var(--white-icon)]">Produtividade<br />Agrícola</div>
+        <div class="text-xs text-[var(--white-icon)] mt-2 opacity-70">Unimaq/John Deere</div>
+      </div>
+
+      <!-- Métrica 3 -->
+      <div class="bg-[#1414149c] rounded-2xl p-6 border border-[var(--white-icon-tr)] text-center hover:bg-[#1a1a1a9c] transition-all duration-300">
+        <div class="text-3xl md:text-4xl font-bold text-[var(--sec)] mb-2">-60%</div>
+        <div class="text-sm md:text-base text-[var(--white-icon)]">Tempo de<br />Resposta</div>
+        <div class="text-xs text-[var(--white-icon)] mt-2 opacity-70">Alertas Produção</div>
+      </div>
+
+      <!-- Métrica 4 -->
+      <div class="bg-[#1414149c] rounded-2xl p-6 border border-[var(--white-icon-tr)] text-center hover:bg-[#1a1a1a9c] transition-all duration-300">
+        <div class="text-3xl md:text-4xl font-bold text-[var(--sec)] mb-2">+18%</div>
+        <div class="text-sm md:text-base text-[var(--white-icon)]">Crescimento<br />Mercado</div>
+        <div class="text-xs text-[var(--white-icon)] mt-2 opacity-70">EICON</div>
+      </div>
+    </div>
+
+    <!-- Linha adicional com métricas de processo -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+      <!-- Tempo economizado -->
+      <div class="bg-[#1414149c] rounded-2xl p-6 border border-[var(--white-icon-tr)] text-center hover:bg-[#1a1a1a9c] transition-all duration-300">
+        <div class="text-2xl md:text-3xl font-bold text-[var(--sec)] mb-2">4h → 15min</div>
+        <div class="text-sm md:text-base text-[var(--white-icon)]">Tempo de Relatórios</div>
+        <div class="text-xs text-[var(--white-icon)] mt-2 opacity-70">Automação de Processos</div>
+      </div>
+
+      <!-- Redução de custos -->
+      <div class="bg-[#1414149c] rounded-2xl p-6 border border-[var(--white-icon-tr)] text-center hover:bg-[#1a1a1a9c] transition-all duration-300">
+        <div class="text-2xl md:text-3xl font-bold text-[var(--sec)] mb-2">-12%</div>
+        <div class="text-sm md:text-base text-[var(--white-icon)]">Custos de Insumos</div>
+        <div class="text-xs text-[var(--white-icon)] mt-2 opacity-70">Agricultura de Precisão</div>
+      </div>
+
+      <!-- Aceleração de pesquisa -->
+      <div class="bg-[#1414149c] rounded-2xl p-6 border border-[var(--white-icon-tr)] text-center hover:bg-[#1a1a1a9c] transition-all duration-300">
+        <div class="text-2xl md:text-3xl font-bold text-[var(--sec)] mb-2">Semanas → Dias</div>
+        <div class="text-sm md:text-base text-[var(--white-icon)]">Análises Científicas</div>
+        <div class="text-xs text-[var(--white-icon)] mt-2 opacity-70">Automação CNPq</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style is:global>
+  .shiny-sec {
+    background: linear-gradient(135deg, #F28705 25%, #e4c07d 50%, #F28705 75%);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 3s linear infinite;
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: 100% 50%;
+    }
+    30%,
+    70% {
+      background-position: 0% 50%;
+    }
+  }
+</style>
