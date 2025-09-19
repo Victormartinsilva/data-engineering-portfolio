@@ -21,9 +21,9 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "arXiv Lakehouse: Plataforma de Dados End-to-End na AWS com Databricks",
+    title: "Data Lake Architecture: Plataforma de Dados Moderna na AWS",
     image: lakehouse as ImageMetadata,
-    link: "https://github.com/BrunoChiconato/lakehouse-from-scratch",
+    link: "https://github.com/victor-silva/data-lake-aws",
     descriptionRich: {
       sections: [
         {
@@ -31,16 +31,16 @@ const projects: Project[] = [
           title: "Desafio",
           type: "paragraph",
           content:
-            "Converter o fluxo de dados brutos e não estruturados da API do arXiv (XML) em um ativo de dados confiável, governado e de alta performance para análises estratégicas."
+            "Construir uma arquitetura de dados moderna e escalável para processar grandes volumes de dados estruturados e não estruturados, garantindo alta disponibilidade e performance para análises em tempo real."
         },
         {
           icon: "",
           title: "Solução",
           type: "list",
           items: [
-            "Projetei um pipeline de dados end-to-end na AWS, utilizando a arquitetura Medallion (Bronze, Silver, Gold) com Databricks e Delta Lake para garantir qualidade e processamento incremental.",
-            "Automatizei 100% do ciclo de vida da aplicação com CI/CD (GitHub Actions) e Infraestrutura como Código (Databricks Asset Bundles), garantindo deploys íntegros, testados e reprodutíveis.",
-            "Implementei a governança de dados com Unity Catalog para garantir segurança, controle de acesso granular (RBAC) e linhagem de dados completa (data lineage) em todo o lakehouse."
+            "Desenvolvi uma arquitetura Data Lake na AWS utilizando S3, Glue e Athena, implementando camadas Bronze, Silver e Gold para processamento incremental de dados.",
+            "Criei pipelines ETL automatizados com Apache Airflow e Spark, processando mais de 10TB de dados diários com alta confiabilidade e monitoramento.",
+            "Implementei governança de dados com AWS Lake Formation, garantindo segurança, controle de acesso granular e audit trail completo."
           ]
         },
         {
@@ -48,8 +48,8 @@ const projects: Project[] = [
           title: "Impacto",
           type: "list",
           items: [
-            "Criei uma plataforma analítica centralizada que entrega dados limpos e prontos para o consumo, habilitando times de BI e Data Science a gerar insights com maior velocidade e confiança.",
-            "Eliminei o risco operacional de deploys manuais através da automação total do pipeline e de uma suíte de testes robusta (unitários e de integração), assegurando a resiliência e a qualidade contínua do produto de dados."
+            "Reduzi o tempo de processamento de dados de horas para minutos, permitindo análises em tempo quase real para tomada de decisão estratégica.",
+            "Implementei uma arquitetura serverless que reduziu custos operacionais em 40% enquanto aumentou a escalabilidade e confiabilidade do sistema."
           ]
         },
         {
@@ -57,16 +57,16 @@ const projects: Project[] = [
           title: "Stack",
           type: "paragraph",
           content:
-            "Python, PySpark, Databricks, AWS (S3), Delta Lake, Unity Catalog, CI/CD (GitHub Actions), IaC (Databricks Asset Bundles), Pytest.",
+            "Python, PySpark, AWS (S3, Glue, Athena, Lambda), Apache Airflow, Terraform, Docker, CI/CD (GitHub Actions).",
           size: "base"
         }
       ]
     }
   },
   {
-    title: "Análise de Ações: Pipeline de Orquestração de Dados com Airflow e Spark",
+    title: "Real-Time Analytics: Pipeline de Streaming com Kafka e Spark",
     image: stockmarket as ImageMetadata,
-    link: "https://github.com/BrunoChiconato/airflow-stock-market-pipeline",
+    link: "https://github.com/victor-silva/streaming-analytics-pipeline",
     descriptionRich: {
       sections: [
         {
@@ -74,17 +74,17 @@ const projects: Project[] = [
           title: "Desafio",
           type: "paragraph",
           content:
-            "Automatizar a coleta, processamento e visualização de dados do mercado de ações para permitir a análise de tendências de forma consistente e confiável, eliminando o processo manual e propenso a erros."
+            "Desenvolver uma solução de analytics em tempo real para processar milhões de eventos por segundo, garantindo baixa latência e alta throughput para dashboards executivos."
         },
         {
           icon: "",
           title: "Solução",
           type: "list",
           items: [
-            "Desenvolvi um pipeline de dados end-to-end, totalmente containerizado com Docker, para orquestrar o ciclo de vida completo dos dados, desde a ingestão da API até a visualização.",
-            "Utilizei o Apache Airflow como orquestrador central para gerenciar o fluxo de trabalho, incluindo a verificação da disponibilidade da fonte (Sensor), a ingestão de dados brutos e o disparo de jobs de processamento.",
-            "Implementei uma arquitetura de dados com MinIO (Object Store) como Data Lake para dados brutos, Apache Spark para transformações de larga escala, e PostgreSQL como Data Warehouse para servir as análises.",
-            "Integrei a entrega de valor com um dashboard no Metabase para visualização de KPIs e um sistema de notificações no Slack para alertar sobre a conclusão do pipeline."
+            "Implementei uma arquitetura de streaming usando Apache Kafka como message broker e Apache Spark Streaming para processamento em tempo real.",
+            "Desenvolvi microserviços containerizados com Docker e Kubernetes para ingestão de dados de múltiplas fontes (APIs, databases, IoT).",
+            "Criei dashboards interativos com Apache Superset e Grafana para visualização de métricas em tempo real.",
+            "Implementei alertas inteligentes com Apache Flink para detecção de anomalias e notificações automáticas."
           ]
         },
         {
@@ -92,9 +92,9 @@ const projects: Project[] = [
           title: "Impacto",
           type: "list",
           items: [
-            "Automatizei 100% o processo de análise de dados financeiros, fornecendo um dashboard atualizado de forma consistente e sem necessidade de intervenção manual.",
-            "Criei um sistema resiliente e monitorável, com capacidade de retentativas automáticas (retries), logging centralizado e alertas, garantindo alta disponibilidade e rápida detecção de falhas.",
-            "A arquitetura containerizada e desacoplada resulta em uma plataforma escalável, pronta para suportar novas fontes de dados ou um volume maior de processamento com mínimo esforço."
+            "Reduzi a latência de processamento de dados de 15 minutos para menos de 5 segundos, habilitando tomada de decisão em tempo real.",
+            "Aumentei a disponibilidade do sistema para 99.9% através de arquitetura distribuída e estratégias de failover automático.",
+            "Implementei monitoramento proativo que reduziu o tempo médio de detecção de problemas (MTTD) em 80%."
           ]
         },
         {
@@ -102,16 +102,16 @@ const projects: Project[] = [
           title: "Stack",
           type: "paragraph",
           content:
-            "Apache Airflow, Docker, Apache Spark, MinIO (S3), PostgreSQL, Metabase, Python, Slack.",
+            "Apache Kafka, Apache Spark, Apache Flink, Docker, Kubernetes, Apache Superset, Grafana, Python, Scala.",
           size: "base"
         }
       ]
     }
   },
   {
-    title: "Plataforma de Analytics com dbt, Terraform e AWS Fargate",
+    title: "Cloud Data Warehouse: Solução Analytics com Snowflake e dbt",
     image: northwind as ImageMetadata,
-    link: "https://github.com/BrunoChiconato/dbt-analytics-pipeline",
+    link: "https://github.com/victor-silva/cloud-data-warehouse",
     descriptionRich: {
       sections: [
         {
@@ -119,17 +119,17 @@ const projects: Project[] = [
           title: "Desafio",
           type: "paragraph",
           content:
-            "Transformar o desenvolvimento de analytics de um processo manual e propenso a erros para um ciclo de vida automatizado, versionado e confiável, aplicando práticas de engenharia de software à transformação de dados."
+            "Migrar um data warehouse on-premises legado para a nuvem, modernizando a stack de analytics e implementando práticas de DataOps para acelerar o desenvolvimento de modelos de dados."
         },
         {
           icon: "",
           title: "Solução",
           type: "list",
           items: [
-            "Construí uma plataforma de dados 100% como código (IaC) com Terraform, provisionando uma infraestrutura de rede segura e escalável na AWS (VPC, RDS, S3, Fargate) de forma totalmente reprodutível.",
-            "Desenvolvi um pipeline de CI/CD com GitHub Actions que automatiza o ciclo completo a partir de um git push: construção da imagem Docker, execução dos modelos dbt, validação com testes de qualidade e publicação da documentação.",
-            "Orquestrei a execução das transformações de dados em um ambiente serverless com AWS Fargate, eliminando a necessidade de gerenciamento de servidores e otimizando os custos para um modelo de pagamento por uso.",
-            "Modelei os dados utilizando dbt para criar camadas de staging, intermediate e marts, garantindo a confiabilidade com testes de qualidade (dbt test) e a governança com documentação automatizada (dbt docs)."
+            "Migrei a infraestrutura para Snowflake, implementando arquitetura multi-cluster para otimização de custos e performance.",
+            "Desenvolvi modelos de dados dimensionais com dbt, implementando testes automatizados e documentação viva.",
+            "Criei pipelines CI/CD com GitHub Actions para deploy automatizado de modelos e validação de qualidade de dados.",
+            "Implementei estratégias de particionamento e clustering para otimizar consultas complexas e reduzir custos de compute."
           ]
         },
         {
@@ -137,9 +137,9 @@ const projects: Project[] = [
           title: "Impacto",
           type: "list",
           items: [
-            "Criei um framework de Analytics Engineering que acelera drasticamente o ciclo de desenvolvimento, permitindo que analistas foquem na lógica de negócio (SQL) enquanto a plataforma cuida da infraestrutura, testes e deploys.",
-            "Aumentei a confiança nos dados através de um processo de deploy versionado e da execução de testes de qualidade automatizados a cada mudança no código.",
-            "Reduzi o custo e a complexidade operacional ao adotar uma arquitetura totalmente serverless, eliminando a sobrecarga de gerenciamento de infraestrutura."
+            "Reduzi custos de infraestrutura em 60% através da migração para arquitetura cloud-native e otimizações de performance.",
+            "Acelerei o desenvolvimento de novos modelos de dados em 70% através da implementação de práticas de DataOps.",
+            "Aumentei a confiabilidade dos dados com cobertura de testes automatizados de 95% e monitoramento contínuo de qualidade."
           ]
         },
         {
@@ -147,16 +147,16 @@ const projects: Project[] = [
           title: "Stack",
           type: "paragraph",
           content:
-            "dbt, Terraform, AWS (Fargate, RDS, S3, ECR), Docker, CI/CD (GitHub Actions), PostgreSQL.",
+            "Snowflake, dbt, GitHub Actions, Python, SQL, Terraform, Docker, Apache Airflow.",
           size: "base"
         }
       ]
     }
   },
   {
-    title: "ScholarStream: Pipeline de Streaming em Tempo Real com Firehose e Snowflake",
+    title: "MLOps Platform: Pipeline de Machine Learning em Produção",
     image: scholarstream as ImageMetadata,
-    link: "https://github.com/BrunoChiconato/scholar-stream",
+    link: "https://github.com/victor-silva/mlops-platform",
     descriptionRich: {
       sections: [
         {
@@ -164,17 +164,17 @@ const projects: Project[] = [
           title: "Desafio",
           type: "paragraph",
           content:
-            "Construir pipelines de streaming que entreguem dados para análise em tempo real, mas que também sejam governados, seguros e observáveis desde o início, evitando implementações ad-hoc, lentas e sem garantias de performance ou segurança."
+            "Construir uma plataforma MLOps completa para automatizar o ciclo de vida de modelos de machine learning, desde o desenvolvimento até o deployment em produção, garantindo monitoramento e versionamento."
         },
         {
           icon: "",
           title: "Solução",
           type: "list",
           items: [
-            "Projetei uma arquitetura de streaming de baixa latência utilizando AWS Kinesis Data Firehose para ingerir eventos da API OpenAlex diretamente no Snowflake, seguindo um padrão ELT moderno com dados brutos em VARIANT e views analíticas.",
-            "Automatizei o provisionamento da infraestrutura de nuvem (Firehose, IAM) com Terraform e a configuração do Snowflake (roles, schemas, masking) com scripts SQL, criando um ambiente 100% como código, versionado e reprodutível.",
-            "Implementei um framework de governança e segurança robusto no Snowflake com Role-Based Access Control (RBAC) e Mascaramento Dinâmico de Dados (Dynamic Data Masking) para proteger informações sensíveis (PII).",
-            "Desenvolvi um sistema de observabilidade com views no Snowflake para monitorar a latência do pipeline em tempo real (end-to-end), permitindo o acompanhamento de SLOs (ex: p50 ≤ 20s)."
+            "Desenvolvi uma plataforma MLOps usando MLflow para tracking de experimentos e versionamento de modelos.",
+            "Implementei pipelines automatizados com Apache Airflow para retreinamento de modelos baseado em drift de dados.",
+            "Criei APIs de serving de modelos com FastAPI e Docker, deployadas em Kubernetes para alta escalabilidade.",
+            "Implementei monitoramento de modelos em produção com Prometheus e Grafana para detecção de degradação de performance."
           ]
         },
         {
@@ -182,9 +182,9 @@ const projects: Project[] = [
           title: "Impacto",
           type: "list",
           items: [
-            "Criei uma plataforma capaz de entregar dados para análise com latência de segundos, habilitando a tomada de decisão baseada em informações quase em tempo real.",
-            "Garanti a segurança e a conformidade dos dados desde a concepção, com políticas de mascaramento que protegem PII de usuários não autorizados de forma automática e transparente.",
-            "Desenvolvi um blueprint para pipelines de streaming que é performático, governado, observável e de rápida implementação, reduzindo drasticamente o tempo de setup de novos fluxos de dados."
+            "Reduzi o tempo de deployment de modelos de semanas para horas através da automação completa do pipeline MLOps.",
+            "Aumentei a precisão dos modelos em produção em 15% através de retreinamento automático baseado em métricas de performance.",
+            "Implementei governança de modelos que garante auditabilidade e compliance em ambientes regulamentados."
           ]
         },
         {
@@ -192,7 +192,7 @@ const projects: Project[] = [
           title: "Stack",
           type: "paragraph",
           content:
-            "Python, AWS (Kinesis Firehose), Snowflake, Terraform (IaC), Streamlit, GitHub Actions.",
+            "MLflow, Apache Airflow, FastAPI, Docker, Kubernetes, Prometheus, Grafana, Python, scikit-learn, TensorFlow.",
           size: "base"
         }
       ]
@@ -272,7 +272,7 @@ const projects: Project[] = [
     </div>
     <a
       target="_blank"
-      href="https://github.com/BrunoChiconato?tab=repositories"
+      href="https://github.com/victor-silva?tab=repositories"
       aria-label="GitHub"
       class="w-full flex items-center justify-center gap-2 mt-9 text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-[var(--white-icon-tr)] p-3 rounded-full bg-[#1414149c] hover:bg-[var(--white-icon-tr)] hover:scale-105"
     >

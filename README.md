@@ -1,21 +1,45 @@
-# Bruno Chiconato - Data Engineer Portfolio
+# Victor Silva - Data Engineer Portfolio
 
-> A sleek, modern, and performant personal portfolio built with Astro, React, and Tailwind CSS to showcase projects and skills in data engineering.
+> Um portfólio moderno e performático construído com Astro, React e Tailwind CSS para mostrar projetos e habilidades em engenharia de dados.
 
-## About The Project
+## Sobre o Projeto
 
-In today's technology landscape, a personal portfolio is a developer's primary marketing asset. The goal of this project was to create a professional, visually appealing, and high-performance digital showcase that effectively communicates technical skills and project experience.
+Este portfólio foi desenvolvido para apresentar minha experiência como Engenheiro de Dados de forma profissional e visualmente atraente. O projeto demonstra não apenas meus projetos técnicos, mas também minha capacidade de trabalhar com tecnologias web modernas.
 
-This portfolio is designed to serve as a central hub for my work, providing a clear narrative of my capabilities as a Data Engineer. It goes beyond a simple list of projects by demonstrating an understanding of modern web technologies and best practices in software development.
+O portfólio serve como um hub central para meu trabalho, fornecendo uma narrativa clara das minhas capacidades como Engenheiro de Dados, especializado em pipelines de dados, cloud computing e analytics.
 
-This project is a personalized fork of the beautiful and minimalist portfolio template originally created by [Oscar Hernandez](https://github.com/Gothsec). It has been adapted and extended to reflect my personal brand and technical focus.
+## Tecnologias Utilizadas
 
-## License
+- **Astro** - Framework para sites estáticos de alta performance
+- **React** - Para componentes interativos
+- **TypeScript** - Type safety e melhor experiência de desenvolvimento
+- **Tailwind CSS** - Framework CSS utilitário
+- **Vercel** - Plataforma de deployment
 
-Distributed under the MIT License. See `LICENSE` for more information.
+## Deploy
 
-## Acknowledgements
+Este projeto está configurado para deploy automático no Vercel. Qualquer push para a branch main será automaticamente deployado.
 
-Finishing with acknowledgements demonstrates humility and community spirit.
+## Desenvolvimento Local
 
-  * **Original Template:** A huge thank you to [Oscar Hernandez (Gothsec)](https://github.com/Gothsec) for creating the original [portfolio template](https://github.com/gothsec/portfolio).
+```bash
+# Instalar dependências
+npm install
+
+# Executar em modo de desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+
+# Preview da build de produção
+npm run preview
+```
+
+## Licença
+
+Distribuído sob a Licença MIT. Veja `LICENSE` para mais informações.
+
+## Agradecimentos
+
+* **Template Original:** Um grande obrigado para [Oscar Hernandez (Gothsec)](https://github.com/Gothsec) por criar o [template original do portfólio](https://github.com/gothsec/portfolio).
