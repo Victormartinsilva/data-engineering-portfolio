@@ -8,11 +8,11 @@
 
 ### 🎓 Formação
 - **Engenharia Agrícola** - UNIOESTE (2017-2023)
-- **Pós-graduação em Engenharia de Software** - FAMEEF (2024-Presente)
+- **Pós-graduação em Engenharia de Software** - FAMEEF (2024-2025)
 
 ### 💼 Experiência Profissional
 - **Analista de Dados** - EICON (Out 2024 - Presente)
-- **Analista de Agricultura de Precisão** - Unimaq/John Deere (Out 2023 - Out 2024)
+- **Analista de Agricultura de Precisão** - Unimaq/John Deere (Set 2023 - Out 2024)
 - **Auxiliar de PCP** - FK Steel (Fev 2023 - Jun 2023)
 - **Estagiário de Projetos** - FK Steel (Out 2022 - Fev 2023)
 - **Pesquisador Científico** - CNPq (Ago 2017 - Mai 2019)
@@ -24,7 +24,7 @@
 - **Python** - pandas, numpy, matplotlib, seaborn
 - **R** - Análises geoestatísticas e modelagem
 - **QGIS** - Análise espacial e geoprocessamento
-- **MySQL** - Consultas otimizadas e ETL
+
 
 ### 💻 Desenvolvimento
 - **Python** - Flask, automação, análise de dados
